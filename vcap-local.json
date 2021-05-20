@@ -1,0 +1,48 @@
+{
+  "services": {
+    "cloudantNoSQLDB": [
+      {
+        "name": "cloudant-proyecto4-uem",
+        "label": "cloudantNoSQLDB",
+        "plan": "Shared",
+        "credentials": {
+          "apikey": "andM-58aWs-F6X6YQlX3nUYVjmN9xQoI7K6Eb7OxYDUG",
+          "host": "65677f84-6158-4d33-a35f-ad6004243418-bluemix.cloudantnosqldb.appdomain.cloud",
+          "iam_apikey_description": "Auto-generated for key 463400d3-5b82-41f4-ad73-207bd7ea8c86",
+          "iam_apikey_name": "Credenciales-proyecto4-uem_cloudant",
+          "iam_role_crn": "crn:v1:bluemix:public:iam::::serviceRole:Manager",
+          "iam_serviceid_crn": "crn:v1:bluemix:public:iam-identity::a/5dd63da5a368447d9db8d0c398d7e6cf::serviceid:ServiceId-9e3cc2b6-7561-4de5-b69e-f8519fa86322",
+          "url": "https://65677f84-6158-4d33-a35f-ad6004243418-bluemix.cloudantnosqldb.appdomain.cloud",
+          "username": "65677f84-6158-4d33-a35f-ad6004243418-bluemix"
+        }
+      }
+    ],
+    "cloud-object-storage": [
+        {
+            "credentials": {
+              "apikey": "7_prDNvhnwRXqmfj0Q7E9KakOHVBUk4B5gThIAJpoLwG",
+              "endpoints": "https://control.cloud-object-storage.cloud.ibm.com/v2/endpoints",
+              "iam_apikey_description": "Auto-generated for key 5f06324b-4e14-4f61-9e4b-97559e22dd93",
+              "iam_apikey_name": "Credenciales-proyecto4-uem",
+              "iam_role_crn": "crn:v1:bluemix:public:iam::::serviceRole:Manager",
+              "iam_serviceid_crn": "crn:v1:bluemix:public:iam-identity::a/5dd63da5a368447d9db8d0c398d7e6cf::serviceid:ServiceId-41043421-4e8c-49f1-b5b9-ded66212e57e",
+              "resource_instance_id": "crn:v1:bluemix:public:cloud-object-storage:global:a/5dd63da5a368447d9db8d0c398d7e6cf:37581fa9-33ea-411a-a6fd-df788b32c636::"
+            },
+            "syslog_drain_url": null,
+            "volume_mounts": [],
+            "label": "cloud-object-storage",
+            "provider": null,
+            "plan": "Lite",
+            "name": "cos-proyecto4-uem",
+            "tags": [
+                "Lite",
+                "storage",
+                "ibm_release",
+                "ibm_created",
+                "rc_compatible",
+                "ibmcloud-alias"
+            ]
+        }
+    ]
+  }
+}
