@@ -1,5 +1,4 @@
 from sklearn.metrics import confusion_matrix, accuracy_score, precision_score, recall_score, f1_score, roc_auc_score
-import pandas as pd
 from datetime import datetime
 
 
@@ -31,7 +30,6 @@ def evaluate_model(model, X_test, y_test, timestamp, model_name):
     model_info['model_used'] = model_name
     # métricas usadas
     model_info['model_metrics'] = {}
-    model_info['model_metrics']['confusion_matrix'] = confusion_matrix(y_test, y_pred, labels=range(10)).tolist()
     model_info['model_metrics']['accuracy_score'] = accuracy_score(y_test, y_pred)
     model_info['model_metrics']['precision_score'] = precision_score(y_test, y_pred, average='macro')
     model_info['model_metrics']['recall_score'] = recall_score(y_test, y_pred, average='macro')
@@ -39,5 +37,6 @@ def evaluate_model(model, X_test, y_test, timestamp, model_name):
     # model_info['model_metrics']['roc_auc_score'] = roc_auc_score(y_test, model.predict_proba(X_test)[:, 1])
     # status del modelo (en producción o no)
     model_info['status'] = "none"
+    model_info['model_metrics']['confusion_matrix'] = confusion_matrix(y_test, y_pred, labels=range(10)).tolist()
 
     return model_info

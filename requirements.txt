@@ -1,8 +1,10 @@
 Flask==2.0.0
-scikit-learn
-matplotlib
-pandas
+scikit-learn==0.22.2
 numpy
+scipy
+pillow
+# scikit-image==0.16.2
 # torch
 ibm-cos-sdk==2.10.0
 cloudant==2.14.0
+# opencv-python

@@ -2,4 +2,4 @@
 applications:
 - name: proyecto4-uem
   random-route: true
-  memory: 128M
+  memory: 256M

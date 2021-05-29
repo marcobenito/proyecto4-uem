@@ -72,7 +72,7 @@ class IBMCOS:
                                              config=Config(signature_version="oauth"),
                                              endpoint_url=endpoint_url)
 
-    def save_object_in_cos(self, obj, name, timestamp, bucket_name='models-uem'):
+    def save_object_in_cos(self, obj, name, timestamp, bucket_name='proyecto4-uem-db'):
         """
             Función para guardar objeto en IBM COS.
             Args:
@@ -87,9 +87,16 @@ class IBMCOS:
         pickle_byte_obj = pickle.dumps(obj)
         # nombre del objeto en COS
         pkl_key = name + "_" + str(int(timestamp)) + ".pkl"
-
+        # print(bucket_name, pkl_key)
+        # client = ibm_boto3.client('s3')
+        # print(client)
+        # print(client.list_buckets(
+        #     IBMServiceInstanceId='crn:v1:bluemix:public:cloud-object-storage:global:a/5dd63da5a368447d9db8d0c398d7e6cf:af68523e-f4aa-46ec-b1c6-b133231813f6::'))
+#crn:v1:bluemix:public:cloud-object-storage:global:a/5dd63da5a368447d9db8d0c398d7e6cf:af68523e-f4aa-46ec-b1c6-b133231813f6:: af68523e-f4aa-46ec-b1c6-b133231813f6
         try:
             # guardado del objeto en COS
+            # print(self.connection.get_available_subresources())
+            # self.connection.DeleteBucket(Bucket='proyecto4-db')
             self.connection.Object(bucket_name, pkl_key).put(
                 Body=pickle_byte_obj
             )

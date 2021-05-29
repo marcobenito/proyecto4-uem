@@ -2,46 +2,39 @@
   "services": {
     "cloudantNoSQLDB": [
       {
-        "name": "cloudant-proyecto4-uem",
+        "name": "Cloudant-jl",
         "label": "cloudantNoSQLDB",
         "plan": "Shared",
         "credentials": {
-          "apikey": "andM-58aWs-F6X6YQlX3nUYVjmN9xQoI7K6Eb7OxYDUG",
-          "host": "65677f84-6158-4d33-a35f-ad6004243418-bluemix.cloudantnosqldb.appdomain.cloud",
-          "iam_apikey_description": "Auto-generated for key 463400d3-5b82-41f4-ad73-207bd7ea8c86",
-          "iam_apikey_name": "Credenciales-proyecto4-uem_cloudant",
+          "apikey": "8DCTdjABM52NKOfJlnx5NhQWE7bh5a3rzyUhPz0GD3PM",
+          "host": "188d89ec-2eba-4fc8-964b-9bb0dc5f03d8-bluemix.cloudantnosqldb.appdomain.cloud",
+          "iam_apikey_description": "Auto-generated for key bad493b0-43cb-48c9-bbc0-f42e9057348c",
+          "iam_apikey_name": "Credenciales de servicio-1",
           "iam_role_crn": "crn:v1:bluemix:public:iam::::serviceRole:Manager",
-          "iam_serviceid_crn": "crn:v1:bluemix:public:iam-identity::a/5dd63da5a368447d9db8d0c398d7e6cf::serviceid:ServiceId-9e3cc2b6-7561-4de5-b69e-f8519fa86322",
-          "url": "https://65677f84-6158-4d33-a35f-ad6004243418-bluemix.cloudantnosqldb.appdomain.cloud",
-          "username": "65677f84-6158-4d33-a35f-ad6004243418-bluemix"
+          "iam_serviceid_crn": "crn:v1:bluemix:public:iam-identity::a/5dd63da5a368447d9db8d0c398d7e6cf::serviceid:ServiceId-c4616816-6f07-4d43-b5af-47a8bc7c6fd8",
+          "url": "https://188d89ec-2eba-4fc8-964b-9bb0dc5f03d8-bluemix.cloudantnosqldb.appdomain.cloud",
+          "username": "188d89ec-2eba-4fc8-964b-9bb0dc5f03d8-bluemix"
         }
       }
     ],
     "cloud-object-storage": [
         {
             "credentials": {
-              "apikey": "7_prDNvhnwRXqmfj0Q7E9KakOHVBUk4B5gThIAJpoLwG",
+              "apikey": "mExtfAJg_0wMv9D5nfK8QCEMGh6ZRZjLOMyaV53kXDw7",
               "endpoints": "https://control.cloud-object-storage.cloud.ibm.com/v2/endpoints",
-              "iam_apikey_description": "Auto-generated for key 5f06324b-4e14-4f61-9e4b-97559e22dd93",
-              "iam_apikey_name": "Credenciales-proyecto4-uem",
+              "iam_apikey_description": "Auto-generated for key 46f76bc6-1341-4f58-8bfb-d6aed8753c1c",
+              "iam_apikey_name": "Credenciales de servicio-2",
               "iam_role_crn": "crn:v1:bluemix:public:iam::::serviceRole:Manager",
-              "iam_serviceid_crn": "crn:v1:bluemix:public:iam-identity::a/5dd63da5a368447d9db8d0c398d7e6cf::serviceid:ServiceId-41043421-4e8c-49f1-b5b9-ded66212e57e",
-              "resource_instance_id": "crn:v1:bluemix:public:cloud-object-storage:global:a/5dd63da5a368447d9db8d0c398d7e6cf:37581fa9-33ea-411a-a6fd-df788b32c636::"
+              "iam_serviceid_crn": "crn:v1:bluemix:public:iam-identity::a/5dd63da5a368447d9db8d0c398d7e6cf::serviceid:ServiceId-18e8a57f-7dc9-41e3-8ae5-f39c9ff1b482",
+              "resource_instance_id": "crn:v1:bluemix:public:cloud-object-storage:global:a/5dd63da5a368447d9db8d0c398d7e6cf:670b6e12-f4d0-4813-bc44-4e3d729adc5f::"
             },
             "syslog_drain_url": null,
             "volume_mounts": [],
             "label": "cloud-object-storage",
             "provider": null,
             "plan": "Lite",
-            "name": "cos-proyecto4-uem",
-            "tags": [
-                "Lite",
-                "storage",
-                "ibm_release",
-                "ibm_created",
-                "rc_compatible",
-                "ibmcloud-alias"
-            ]
+            "name": "cos-proyecto4-uem"
+
         }
     ]
   }
