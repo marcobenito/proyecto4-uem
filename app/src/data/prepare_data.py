@@ -14,16 +14,7 @@ import base64
 
 
 
-class CustomUnpickler(pickle.Unpickler):
-
-    def find_class(self, module, name):
-        if name == 'Scaler':
-            from app.src.data.pipeline_fn import Scaler
-            return Scaler
-        elif name == 'HogFeaturesExtraction':
-            from app.src.data.pipeline_fn import HogFeaturesExtraction
-            return HogFeaturesExtraction
-        return super().find_class(module, name)
+#
 
 def prepare_dataset(path, model_info_db_name='cloudant-db'):
     # Importamos los datos para entrenar el modelo
@@ -87,3 +78,13 @@ def load_data_config(db_name):
     return query()['docs'][0]
 
 
+# class CustomUnpickler(pickle.Unpickler):
+#
+#     def find_class(self, module, name):
+#         if name == 'Scaler':
+#             from app.src.data.pipeline_fn import Scaler
+#             return Scaler
+#         elif name == 'HogFeaturesExtraction':
+#             from app.src.data.pipeline_fn import HogFeaturesExtraction
+#             return HogFeaturesExtraction
+#         return super().find_class(module, name)
